@@ -1,0 +1,35 @@
+body{
+    background-image: url("background_img.jpg");
+    background-size: 700px !important;
+}
+textarea{
+    background-color:  #3da87f;
+    color: white;
+   margin-left: 200px !important;
+}
+.welcome{
+    background-color:  #3da87f;
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+ }
+ .btn{
+     /* background-color: rgb(231, 103, 28) !important; */
+     background-color: rgb(6, 65, 55) !important;
+     color: white !important;
+     font-weight: bold !important;
+     margin-right: 200px;
+ }
+ .legend{
+    background-color:  #3da87f;
+    color: white;
+    margin-left: 120px;
+    font-weight: bold !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: fit-content;
+    margin-top: 50px;
+    
+ }
+ .sourceInput{
+     margin-left: 20px !important;
+ }

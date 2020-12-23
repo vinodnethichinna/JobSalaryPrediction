@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Salary Prediction</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1 class="text-center welcome">Welcome to Job Salary Predictor!!</h1>
+  <div>
+    <!-- Reading input -->
+    <form action="{{ url_for('predict')}}" method="post">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-6 sourceInput"><textarea type="text" name="YearsExperience" rows="15" cols="52"
+              placeholder="Please Enter the Job Description Here" required="required"></textarea></div>
+          <div class="col-4 legend">
+            <div>Salary Bin Ranges:</div>
+            <div>0 - below $50,000 CAD</div>
+            <div>1 - $50,000 - $70,000 CAD</div>
+            <div>2 - $70,000 - $90,000 CAD</div>
+            <div>3 - $90,000 - $120,000 CAD</div>
+            <div>4 - $120,000 - $150,000 CAD</div>
+            <div>5 - $150,000 - $400,000 CAD</div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="col text-center">
+        <button type="submit" class="btn btn-warning">Predict the Salary</button>
+      </div>
+
+    </form>
+
+    <br>
+    <br>
+    <h3 class="text-center welcome">{{ prediction_text }}</h3>
+
+  </div>
+
+
+</body>
+
+</html>
